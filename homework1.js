@@ -50,3 +50,9 @@ const characters = [
         teams: ['x-men']
     }
 ]
+
+function XMenFilter(characters){
+    return XMenCharacter= characters.filter(xmen => xmen.teams.includes('x-men'));
+}
+
+console.log(XMenFilter(characters));

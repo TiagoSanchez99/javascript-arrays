@@ -47,3 +47,9 @@ const xmen = [
         name: 'Iceman'
     }
 ]
+
+function MatchFilter(avengers,xmen){
+    return Hero= xmen.filter(x => {return avengers.some(avenger => avenger.name === x.name)});
+}
+
+console.log(MatchFilter(avengers,xmen));
